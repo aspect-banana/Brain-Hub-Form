@@ -1,12 +1,26 @@
 body {
-  background: #003366; /* Solid dark blue background */
-  color: #ffffff; /* White text */
+  background: linear-gradient(135deg, #800000, #003366);
+  background-size: 400% 400%;
+  animation: gradientBackground 10s ease infinite;
+  color: #ffffff; /* White text for contrast */
   font-family: "Orbitron", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   margin: 0;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .form-container {
@@ -26,7 +40,7 @@ body {
 
 .form-control {
   background: transparent;
-  border: 2px solid #003366; /* Dark blue border */
+  border: 2px solid #800000; /* Dark red border */
   color: #003366; /* Dark blue text */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   transition: border-color 0.3s, box-shadow 0.3s;
@@ -46,7 +60,8 @@ body {
 }
 
 button {
-  background: #003366; /* Solid dark blue button */
+  background: linear-gradient(90deg, #800000, #003366);
+  background-size: 400% 400%;
   color: #ffffff; /* White text for button */
   border: none;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
@@ -56,6 +71,18 @@ button {
   padding: 10px 20px;
   border-radius: 10px;
   width: 100%;
+}
+
+@keyframes gradientButton {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 button:hover {
