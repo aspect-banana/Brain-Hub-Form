@@ -1,6 +1,5 @@
-
 body {
-  background: linear-gradient(135deg, #ff0040, #40ff00, #0040ff, #ffcc00);
+  background: linear-gradient(135deg, #003366, #800000, #003366);
   background-size: 400% 400%;
   animation: gradientBackground 10s ease infinite;
   color: #e1e1e1;
@@ -28,46 +27,46 @@ body {
   width: 100%;
   max-width: 700px;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.85);
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2),
-    inset 0 0 15px rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2),
+    inset 0 0 15px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   text-align: center;
 }
 
 .form-container h4 {
-  color: #fff;
-  text-shadow: 0 0 10px #fff;
+  color: #003366;
+  text-shadow: 0 0 10px #003366;
 }
 
 .form-control {
   background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  color: #e1e1e1;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  color: #003366;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   transition: border-color 0.3s, box-shadow 0.3s;
   font-size: 1rem;
 }
 
 .form-control:focus {
   background: transparent;
-  border-color: #ff0040;
-  box-shadow: 0 0 10px #ff0040;
+  border-color: #800000;
+  box-shadow: 0 0 10px #800000;
   outline: none;
 }
 
 .form-check-label {
-  color: #e1e1e1;
+  color: #003366;
   font-size: 0.9rem;
 }
 
 button {
-  background: linear-gradient(90deg, #ff0040, #ffcc00, #40ff00, #0040ff);
+  background: linear-gradient(90deg, #003366, #800000, #003366);
   background-size: 400% 400%;
-  color: #000;
+  color: #fff;
   border: none;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
-    0 0 30px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5),
+    0 0 30px rgba(0, 0, 0, 0.3);
   transition: all 0.4s ease-in-out;
   animation: gradientButton 3s ease infinite;
   font-size: 1.2rem;
