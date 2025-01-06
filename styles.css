@@ -1,8 +1,6 @@
 body {
-  background: linear-gradient(135deg, #003366, #001a33, #003366);
-  background-size: 400% 400%;
-  animation: gradientBackground 10s ease infinite;
-  color: #ffffff;
+  background: #003366; /* Solid dark blue background */
+  color: #ffffff; /* White text */
   font-family: "Orbitron", sans-serif;
   display: flex;
   align-items: center;
@@ -11,23 +9,11 @@ body {
   margin: 0;
 }
 
-@keyframes gradientBackground {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .form-container {
   width: 100%;
   max-width: 700px;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.95);
+  background: #ffffff; /* White background for form */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2),
     inset 0 0 15px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
@@ -35,14 +21,13 @@ body {
 }
 
 .form-container h4 {
-  color: #003366;
-  text-shadow: 0 0 10px #003366;
+  color: #003366; /* Dark blue text for headings */
 }
 
 .form-control {
   background: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.5);
-  color: #003366;
+  border: 2px solid #003366; /* Dark blue border */
+  color: #003366; /* Dark blue text */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   transition: border-color 0.3s, box-shadow 0.3s;
   font-size: 1rem;
@@ -50,41 +35,27 @@ body {
 
 .form-control:focus {
   background: transparent;
-  border-color: #ffffff;
+  border-color: #ffffff; /* White border on focus */
   box-shadow: 0 0 10px #ffffff;
   outline: none;
 }
 
 .form-check-label {
-  color: #003366;
+  color: #003366; /* Dark blue for checkbox labels */
   font-size: 0.9rem;
 }
 
 button {
-  background: linear-gradient(90deg, #003366, #001a33, #003366);
-  background-size: 400% 400%;
-  color: #ffffff;
+  background: #003366; /* Solid dark blue button */
+  color: #ffffff; /* White text for button */
   border: none;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5),
-    0 0 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+    0 0 30px rgba(255, 255, 255, 0.3);
   transition: all 0.4s ease-in-out;
-  animation: gradientButton 3s ease infinite;
   font-size: 1.2rem;
   padding: 10px 20px;
   border-radius: 10px;
   width: 100%;
-}
-
-@keyframes gradientButton {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 button:hover {
